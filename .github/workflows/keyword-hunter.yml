@@ -4,7 +4,7 @@ on:
   schedule:
     # Triggers at minute 30 UTC between 04:30 and 16:30 UTC (10:00 AM to 10:00 PM IST).
     # The runner boots up in ~30-40s, syncing with Swiggy deal propagation (:00:30 IST).
-    - cron: '30 4-16 * * *'
+    - cron: '30 * * * *'
   workflow_dispatch:
     inputs:
       skip_sync:
